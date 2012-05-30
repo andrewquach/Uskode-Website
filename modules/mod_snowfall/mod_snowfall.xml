@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.7.0">
+	<name>JSnowfall</name>
+	<author>Jfriendly.net</author>
+	<creationDate>October 19, 2008</creationDate>
+	<copyright>2008 Jfriendly.net. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://www.jfriendly.net</authorUrl>
+	<version>1.5</version>
+	<description>
+                  Snowfall module by Jfriendly.net. Disable the title and publish. If you like this module, please consider making a donation at http://www.jfriendly.net. Enjoy!
+        </description>
+	<files>
+		<filename module="mod_snowfall">mod_snowfall.php</filename>
+                <filename>snowstorm.js</filename>
+                <filename>jsnowfall.png</filename>
+                <filename>include_ver.php</filename>
+	</files>
+	<!-- Joomla! 1.5 uses params -->
+	<params>
+		<param name="moduleclass_sfx" type="text" default="_none" label="Module Class Suffix" description="A suffix to be applied to the css class of the module.  '_none' is a dummy value to override the module class." />
+                <param name="jkeycode" type="text" default="" label="Unique Key" description="If you want to remove the label and backlink, you must get a Unique Key at JFriendly.net.  Just copy paste the Unique Key here." />
+		     
+	</params>
+        <config>
+          <!-- Joomla! 1.7 uses fields -->
+
+          	<fields name="params">
+		  	<fieldset name="basic">
+			<field name="moduleclass_sfx" type="text" default="_none" label="Module Class Suffix" description="A suffix to be applied to the css class of the module.  '_none' is a dummy value to override the module class." />
+                	<field name="jkeycode" type="text" default="" label="Unique Key" description="If you want to remove the label and backlink, you must get a Unique Key at JFriendly.net.  Just copy paste the Unique Key here." />
+			</fieldset>
+        
+        	</fields>
+        
+	</config>
+</install>

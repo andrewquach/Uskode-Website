@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" position="status" method="upgrade">
+	<name>Slide Them All!</name>
+	<author>artetics.com</author>
+	<creationDate>July 2010</creationDate>
+	<copyright>Copyright (C) 2010 artetics.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@artetics.com</authorEmail>
+	<authorUrl>www.artetics.com</authorUrl>
+	<version>1.5.5</version>
+	<description><![CDATA[Slide Them All!: image slider. <br /><br />&copy;&nbsp;<a href="http://www.artetics.com">Artetics.com</a> - Start Point For Your Website.]]></description>
+	<files>
+		<filename module="mod_slidethemall">mod_slidethemall.php</filename>
+		<filename module="mod_slidethemall">js/jquery.1.4.js</filename>
+		<filename module="mod_slidethemall">js/script.js</filename>
+		<filename module="mod_slidethemall">js/jqFancyTransitions.min.js</filename>
+		<filename module="mod_slidethemall">js/coin-slider.min.js</filename>
+		<filename module="mod_slidethemall">css/style.css</filename>
+		<filename module="mod_slidethemall">css/coin-slider-styles.css</filename>
+		<folder>icons</folder>
+	</files>
+	<params>
+		<param name="slider" type="radio" default="1" label="Slider" description="Which slider to use">
+			<option value="1">Minimalistic</option>
+			<option value="2">Coin Slider</option>
+			<option value="3">Fancy Transitions</option>
+		</param>
+		<param name="path" type="text" default="" label="Path" description="Path to images folder" />
+		<param name="containerWidth" type="text" default="300" label="Container width" description="Container width" />
+		<param name="containerHeight" type="text" default="300" label="Container height" description="Container height" />
+		<param name="thumbWidth" type="text" default="75" label="Thumbnail width" description="Thumbnail width" />
+		<param name="thumbHeight" type="text" default="75" label="Thumbnail height" description="Thumbnail height" />
+		<param name="speed" type="text" default="3000" label="Speed" description="Speed" />
+		<param name="lightbox" type="list" default="0" label="Lightbox" description="Lightbox to show when image is clicked. Works for Coin Slider only">
+			<option value="0">none</option>
+			<option value="artsexylightbox">Art Sexy Lightbox</option>
+			<option value="artcolorbox">Art Colorbox</option>
+			<option value="artprettyphoto">Art Pretty Photo</option>
+			<option value="artnicebox">Art Nicebox</option>
+		</param>
+		<param name="sortBy" type="list" default="name" label="Sort images by" description="Sort images by">
+			<option value="name">name</option>
+			<option value="date">date</option>
+		</param>
+		<param name="sortDir" type="list" default="asc" label="Sort direction" description="Sort direction">
+			<option value="asc">asc</option>
+			<option value="desc">desc</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="slider" type="radio" default="1" label="Slider" description="Which slider to use">
+					<option value="1">Minimalistic</option>
+					<option value="2">Coin Slider</option>
+					<option value="3">Fancy Transitions</option>
+				</field>
+				<field name="path" type="text" default="" label="Path" description="Path to images folder" />
+				<field name="containerWidth" type="text" default="300" label="Container width" description="Container width" />
+				<field name="containerHeight" type="text" default="300" label="Container height" description="Container height" />
+				<field name="thumbWidth" type="text" default="75" label="Thumbnail width" description="Thumbnail width" />
+				<field name="thumbHeight" type="text" default="75" label="Thumbnail height" description="Thumbnail height" />
+				<field name="speed" type="text" default="3000" label="Speed" description="Speed" />
+				<field name="lightbox" type="list" default="0" label="Lightbox" description="Lightbox to show when image is clicked. Works for Coin Slider only">
+					<option value="0">none</option>
+					<option value="artsexylightbox">Art Sexy Lightbox</option>
+					<option value="artcolorbox">Art Colorbox</option>
+					<option value="artprettyphoto">Art Pretty Photo</option>
+					<option value="artnicebox">Art Nicebox</option>
+				</field>
+				<field name="sortBy" type="list" default="name" label="Sort images by" description="Sort images by">
+					<option value="name">name</option>
+					<option value="date">date</option>
+				</field>
+				<field name="sortDir" type="list" default="asc" label="Sort direction" description="Sort direction">
+					<option value="asc">asc</option>
+					<option value="desc">desc</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

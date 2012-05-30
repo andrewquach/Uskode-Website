@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<settings><background>
+	<color code="#FFFFFF" alpha="1" />	</background><viewer><base>
+			<color code="#cccccc" alpha="1" />
+		</base><effect>
+			<type>1</type>
+			<time>5</time>
+			<closingType>default</closingType>
+				<preloader>
+					<color code="#202020" alpha="1" />
+				</preloader>
+		</effect>
+
+		<description position="top">
+				
+				<effect>1</effect>
+				
+				<base>
+					<color code="#020202" alpha="0.7" />
+				</base>
+				
+				<text>
+					<size>12</size>
+					<color code="#FFFFFF" alpha="1" />
+				</text>
+		</description>
+
+		<priceTag enabled="no">
+				
+				<tag width="120" height="120">assets/tags/flower_green.png</tag>
+				
+				<position>TL</position>
+				
+				<symbol>$</symbol>
+				
+				<label>
+					<size>20</size>
+					<color code="#FFFFFF" alpha="1" />
+				</label>
+				
+			</priceTag>
+
+			<controls position="bottom">
+				
+				<base>
+					<color code="#524B46" alpha="0.7" />
+				</base>
+				
+				<arrow>
+					
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="0.6" />
+						</down>
+					</base>
+					
+					<arrow>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</arrow>
+					
+				</arrow>
+				
+				<display>
+					
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="1" />
+						</down>
+					</base>
+					
+					<circle>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</circle>
+					
+					<symbol>
+						<up>
+							<color code="#020202" alpha="1" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="1" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="1" />
+						</down>
+					</symbol>
+					
+				</display>
+				
+				<autoplay displayTime="5" default="on">
+					
+					<base>
+						<up>
+							<color code="#FBFBFB" alpha="0" />
+						</up>
+						<over>
+							<color code="#FBFBFB" alpha="0.6" />
+						</over>
+						<down>
+							<color code="#FBFBFB" alpha="0.6" />
+						</down>
+					</base>
+					
+					<animation>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</animation>
+					
+					<symbol>
+						<up>
+							<color code="#FBFBFB" alpha="1" />
+						</up>
+						<over>
+							<color code="#020202" alpha="1" />
+						</over>
+						<down>
+							<color code="#020202" alpha="1" />
+						</down>
+					</symbol>
+					
+				</autoplay>
+				
+			</controls>
+			
+		</viewer>
+
+		<thumbsPanel position="bottom" height="76">
+			
+			<base>
+				<color code="#2C2C2C" alpha="1" />
+			</base>
+			
+			<thumb width="86" height="64">
+				
+				<base>
+					<up>
+						<color code="#FEFEFE" alpha="1" />
+					</up>
+					<over>
+						<color code="#0EF44A" alpha="1" />
+					</over>
+					<down>
+						<color code="#0EF44A" alpha="1" />
+					</down>
+					<selected>
+						<color code="#0EF44A" alpha="1" />
+					</selected>
+				</base>
+				
+				<preloader>
+					<color code="#202020" alpha="1" />
+				</preloader>
+				
+			</thumb>
+			
+			<tooltip>
+				
+				<base>
+					<color code="#FBFBFB" alpha="0.8" />
+				</base>
+				
+				<label>
+					<color code="#202020" alpha="1" />
+				</label>
+				
+			</tooltip>
+			
+			<arrow>
+				<up>
+					<color code="#0EF44A" alpha="1" />
+				</up>
+				<over>
+					<color code="#0EF44A" alpha="1" />
+				</over>
+				<down>
+					<color code="#0EF44A" alpha="1" />
+				</down>
+			</arrow>
+			
+		</thumbsPanel>
+		</settings>
+		 <content> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/AM.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/AM.jpg</thumb><label><![CDATA[amsales website1]]></label><description><![CDATA[amsales website1]]></description><link window="new">http://uskode.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/AM2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/AM2.jpg</thumb><label><![CDATA[amsales website2]]></label><description><![CDATA[amsales website2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/Easilifestyle.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/Easilifestyle.jpg</thumb><label><![CDATA[easilifestyle web1]]></label><description><![CDATA[easilifestyle web1]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/Easilifestyle2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/Easilifestyle2.jpg</thumb><label><![CDATA[easilifestyle web2]]></label><description><![CDATA[easilifestyle web2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/newfresh.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/newfresh.jpg</thumb><label><![CDATA[newfresh web1]]></label><description><![CDATA[newfresh web1]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/newfresh2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/newfresh2.jpg</thumb><label><![CDATA[newfresh web2]]></label><description><![CDATA[newfresh web2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/selvni.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/selvni.jpg</thumb><label><![CDATA[selvni web1]]></label><description><![CDATA[selvni web1]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/selvni2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/selvni2.jpg</thumb><label><![CDATA[selvni web2]]></label><description><![CDATA[selvni web2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/Teds.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/Ted's.jpg</thumb><label><![CDATA[ted's web1]]></label><description><![CDATA[ted's web1]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/Teds2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/Ted's2.jpg</thumb><label><![CDATA[ted's web2]]></label><description><![CDATA[ted's web2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/umisidhi.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/umisidhi.jpg</thumb><label><![CDATA[umisushi web1]]></label><description><![CDATA[umisushi web1]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/umisushi2.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/umisushi2.jpg</thumb><label><![CDATA[umisushi web2]]></label><description><![CDATA[umisushi web2]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item> <item interactive="no" zoom="enabled"> <main scale="yes">http://localhost/uskode/images/showcase/Urah.jpg</main> <thumb scale="yes">http://localhost/uskode/modules/mod_dreamwork_gallery/pictures/small/Urah.jpg</thumb><label><![CDATA[urah web]]></label><description><![CDATA[urah web]]></description><link window="new">http://vm.xmlswf.com</link><price>
+				<regular></regular>
+				<updated></updated>
+			</price></item></content></data>

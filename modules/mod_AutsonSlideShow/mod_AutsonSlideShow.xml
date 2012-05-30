@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<install type="module" version="1.5.0">
+
+<name>Autson Slideshow</name>
+
+<author>xing</author>
+
+<creationDate>September 2011</creationDate>
+
+<copyright>Copyright (C) 2010 - 2011 Autson.com. All rights reserved.</copyright>
+
+<license>GNU/GPL</license>
+
+<authorEmail>info@autson.com</authorEmail>
+
+<authorUrl>www.autson.com</authorUrl>
+
+<version>1.2</version>	
+
+<description>
+
+
+
+<![CDATA[
+
+
+
+Autson Skitter Slideshow For Joomla! module Let your joomla more elegant Autson Skitter Slideshow! With numerous customization options, is one that will bode well for your theme. .HaveFun! http://www.AUTSON.com
+
+
+
+<br/>
+
+
+
+<p>
+
+
+
+]]>
+
+
+
+</description>
+
+<files>
+
+<filename module="mod_AutsonSlideShow">mod_AutsonSlideShow.php</filename>
+
+<filename>index.html</filename>
+
+<filename>helper.php</filename>
+
+<filename>tmpl/index.html</filename>
+
+<filename>tmpl/default.php</filename>
+
+<folder>fonts</folder>
+
+<folder>js</folder>
+
+<folder>elements</folder>
+
+<folder>css</folder>
+
+<folder>images</folder>
+
+</files>
+
+<params addpath="/modules/mod_AutsonSlideShow/elements">
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Settings&lt;/div&gt;" />
+
+
+
+<param name="moduleclass_sfx" type="text"  default="" label="Module Class Suffix" description="" />
+
+
+
+<param name="slidewidth" type="text"  default="800" label="Slideshow Width" description="Enter width of slide show" />
+
+
+
+<param name="slideheight" type="text"  default="300" label="Slideshow Height" description="Enter height of slide show" />
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Preferences&lt;/div&gt;" />
+
+
+
+<param name="menu_style" type="list"  default="list" label="SlideShow Effect" description="Effect">
+
+
+
+<option value="0">Random</option>
+
+
+
+<option value="1">Cube</option>
+
+
+
+<option value="2">Cube Random</option>
+
+
+
+<option value="3">Block</option>			
+
+
+
+<option value="4">Cube Stop</option>
+
+
+
+<option value="5">Cube Hide</option>
+
+
+
+<option value="6">Cube Size</option>			
+
+
+
+<option value="7">Horizontal</option>
+
+
+
+<option value="8">Show Bars</option>
+
+
+
+<option value="9">Cube Spread</option>			
+
+
+
+<option value="10">Show Bars Random</option>
+
+
+
+<option value="11">Tube</option>
+
+
+
+<option value="12">Fade</option>			
+
+
+
+<option value="13">Fade Four</option>
+
+
+
+<option value="14">Paralell</option>
+
+
+
+<option value="15">Blind</option>			
+
+
+
+<option value="16">Blind Height</option>
+
+
+
+<option value="17">Blind Width</option>
+
+
+
+<option value="18">Direction Top</option>			
+
+
+
+<option value="19">Direction Bottom</option>
+
+
+
+<option value="20">Direction Right</option>
+
+
+
+<option value="21">Direction Left</option>
+
+
+
+<option value="22">Cube Stop Random</option>
+
+
+
+<option value="23">Circles</option>
+
+
+
+<option value="24">Circles Inside</option>
+
+
+
+<option value="25">Circles Rotate</option>
+
+
+
+<option value="26">Glass Cube</option>
+
+
+
+<option value="27">Glass Block</option>
+
+
+
+</param>
+
+
+
+<param name="timeinterval" type="text"  default="2500" label="Time Interval" description="Enter Time between each slide" />
+
+
+
+<param name="velocity" type="text"  default="1" label="Velocity of animation" description="Velocity of animation" />
+
+
+<param name="align" type="list"  default="center" label="Module Align" description="">
+<option value="center">Center</option>
+<option value="left">Left</option>
+</param>
+
+<param name="backgroundcolor" type="color"  default="#000" label="Module Backgound" description="" />
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Navigation&lt;/div&gt;" />
+
+
+
+<param name="navigation" type="list"  default="list" label="Type of navigation" description="The menu style">
+
+
+
+<option value="numbers">Numbers</option>
+
+
+
+<option value="thumbs">Thumbs</option>
+
+
+
+<option value="dots">Dots</option>
+
+<option value="hide">Hide</option>
+
+
+
+
+
+</param>
+
+
+
+<param name="arrows" type="list" default="yes" label="display arrows" description="Displays arrows">
+
+
+
+<option value="yes">Yes</option>
+
+
+
+<option value="no">No</option>
+
+
+
+</param>
+
+
+
+<param name="hidetools" type="list"  default="no" label="Hide Tools:" description="Hide Tools On mouse out">
+
+
+
+<option value="yes">Yes</option>
+
+
+
+<option value="no">No</option>
+
+
+
+</param>
+
+
+
+
+
+<param name="arrowspos" type="list"  default="default" label="Arrows Position" description="">
+
+<option value="default">default</option>
+
+<option value="top">top</option>
+
+<option value="bottom">bottom</option>
+
+
+
+</param>
+
+<param name="numberspos" type="list"  default="default" label="Numbers Position" description="">
+
+<option value="default">Default</option>
+
+<option value="top">top</option>
+
+<option value="bottom">bottom</option>
+
+
+
+</param>
+
+
+
+
+
+
+
+
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Appearance&lt;/div&gt;" />
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;Border&lt;/div&gt;" />
+
+
+
+<param name="border" type="list"  default="0" label="SlideShow Border" description="">
+
+<option value="0">0px</option>
+
+<option value="1">1px</option>
+
+<option value="2">2px</option>
+
+<option value="3">3px</option>
+
+<option value="4">4px</option>
+
+<option value="5">5px</option>
+
+<option value="6">6px</option>
+
+<option value="7">7px</option>
+
+<option value="8">8px</option>
+
+<option value="9">9px</option>
+
+<option value="10">10px</option>
+
+
+
+
+
+</param>
+
+<param name="bordercolor" type="color"  default="#000" label="Border Color" description="" />
+
+
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;Title&lt;/div&gt;" />
+
+<param name="labelcolor" type="color"  default="#fff" label="Title Color" description="" />
+
+
+
+<param name="labelsize" type="list"  default="22" label="Title Font Size" description="">
+
+<option value="10">10px</option>
+
+<option value="11">11px</option>
+
+<option value="12">12px</option>
+
+<option value="13">13px</option>
+
+<option value="14">14px</option>
+
+<option value="15">15px</option>
+
+<option value="16">16px</option>
+
+<option value="17">17px</option>
+
+<option value="18">18px</option>
+
+<option value="19">19px</option>
+
+<option value="20">20px</option>
+
+<option value="21">21px</option>
+
+<option value="22">22px</option>
+
+<option value="23">23px</option>
+
+<option value="24">24px</option>
+
+<option value="25">25px</option>
+
+<option value="26">26px</option>
+
+<option value="27">27px</option>
+
+<option value="28">28px</option>
+
+<option value="29">29px</option>
+
+<option value="30">30px</option>
+
+<option value="31">31px</option>
+
+<option value="32">32px</option>
+
+<option value="33">33px</option>
+
+<option value="34">34px</option>
+
+<option value="35">35px</option>
+
+
+
+</param>
+
+
+
+
+
+<param name="titlefont" type="list"  default="BebasNeueRegular" label="Title Font" description="">
+
+<option value="BebasNeueRegular">BebasNeueRegular</option>
+
+<option value="CaviarDreamsBold">CaviarDreamsBold</option>
+
+<option value="LillyRegular">LillyRegular</option>
+
+<option value="arial">Arial, Helvetica, sans-serif</option>
+
+<option value="tnr">"Times New Roman", Times, serif</option>
+
+<option value="cn">"Courier New", Courier, monospace</option>
+
+<option value="georgia">Georgia, "Times New Roman", Times, serif</option>
+
+<option value="verdana">Verdana, Arial, Helvetica, sans-serif</option>
+
+<option value="default">Default As Template</option>
+
+
+
+</param>
+
+
+
+
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;Desc&lt;/div&gt;" />
+
+<param name="desccolor" type="color"  default="#fff" label="Desc Color" description="" />
+
+
+
+<param name="descsize" type="list"  default="10" label="Desc Font Size" description="">
+
+<option value="10">10px</option>
+
+<option value="11">11px</option>
+
+<option value="12">12px</option>
+
+<option value="13">13px</option>
+
+<option value="14">14px</option>
+
+<option value="15">15px</option>
+
+<option value="16">16px</option>
+
+<option value="17">17px</option>
+
+<option value="18">18px</option>
+
+<option value="19">19px</option>
+
+<option value="20">20px</option>
+
+<option value="21">21px</option>
+
+<option value="22">22px</option>
+
+<option value="23">23px</option>
+
+<option value="24">24px</option>
+
+<option value="25">25px</option>
+
+<option value="26">26px</option>
+
+<option value="27">27px</option>
+
+</param>
+
+
+
+
+
+<param name="descfont" type="list"  default="arial" label="Desc Font" description="">
+
+<option value="BebasNeueRegular">BebasNeueRegular</option>
+
+<option value="CaviarDreamsBold">CaviarDreamsBold</option>
+
+<option value="LillyRegular">LillyRegular</option>
+
+<option value="arial">Arial, Helvetica, sans-serif</option>
+
+<option value="tnr">"Times New Roman", Times, serif</option>
+
+<option value="cn">"Courier New", Courier, monospace</option>
+
+<option value="georgia">Georgia, "Times New Roman", Times, serif</option>
+
+<option value="verdana">Verdana, Arial, Helvetica, sans-serif</option>
+
+<option value="default">Default As Template</option>
+
+</param>
+
+
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Navigation Appearance&lt;/div&gt;" />
+
+
+
+<param name="bgout" type="color"  default="#333" label="Numbers Bg mouse out" description="Numbers and dots background on mouse out" />
+
+
+
+<param name="colorout" type="color"  default="#fff" label="Numbers color mouse out" description="Numbers and dots color on mouse out" />
+
+
+
+<param name="bgover" type="color"  default="#000" label="Numbers Bg mouse over" description="Numbers and dots background on mouse over" />
+
+
+
+<param name="colorover" type="color"  default="#fff" label="Numbers color mouse over" description="Numbers and dots color on mouse over" />
+
+
+
+<param name="bgactive" type="color"  default="#cc3333" label="Numbers Bg mouse over" description="Numbers and dots background on mouse over" />
+
+
+
+<param name="coloractive" type="color"  default="#fff" label="Numbers color mouse Active" description="Numbers and dots color on mouse Active" />
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Jquery&lt;/div&gt;" />
+
+
+
+<param name="show_jquery" type="radio" default="yes" label="Load jquery" description="">
+
+
+
+<option value="yes">Yes</option>
+
+
+
+<option value="no">No</option>
+
+
+
+</param>
+
+
+
+
+<param name="load" type="radio" default="onmod" label="Loading Method" description="">
+
+
+
+<option value="onload">onLoad</option>
+
+
+
+<option value="onmod">onMod</option>
+
+
+
+</param>
+
+<param type="spacer" default="&lt;div style=&quot;color:#fff; font-size:12px; font-weight:bold; padding:3px; margin:0; text-align:center; background:#333333;&quot;&gt;Images&lt;/div&gt;" />
+
+
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 1&lt;/div&gt;" />
+
+<param name="img1" type="text" size="60" default="modules/mod_AutsonSlideShow/images/001.jpg" label="Image1 Path" description="Images1 path URL" />
+
+
+
+<param name="label1" type="text" size="60"   default="" label="Label1" description="" />
+
+<param name="desc1" type="textarea" rows="7" cols="35"   default="" label="Desc 1" description="You Can Add HTML Here" />
+
+
+
+<param name="link1" type="text" size="60"  default="" label="Image1 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image one parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 2 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 2&lt;/div&gt;" />
+
+<param name="img2" type="text" size="60"  default="modules/mod_AutsonSlideShow/images/002.jpg" label="Image2 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label2" type="text" size="60" size="60" default="" label="Image2 Label" description="Images1 Label" />-->
+
+
+
+<param name="label2" type="text" size="60"   default="" label="Label2" description="" />
+
+<param name="desc2" type="textarea" rows="7" cols="35"   default="" label="Desc 2" description="You Can Add HTML Here" />
+
+
+
+<param name="link2" type="text" size="60" default="" label="Image2 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 2 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 3 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 3&lt;/div&gt;" />
+
+<param name="img3" type="text" size="60" default="" label="Image3 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label3" type="text" size="60" size="60" default="" label="Image3 Label" description="Images1 Label" />-->
+
+
+
+<param name="label3" type="text" size="60"  default="" label="Label3" description="" />
+
+<param name="desc3" type="textarea" rows="7" cols="35"   default="" label="Desc 3" description="You Can Add HTML Here" />
+
+
+
+<param name="link3" type="text" size="60" default="" label="Image3 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 3 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 4 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 4&lt;/div&gt;" />
+
+<param name="img4" type="text" size="60" default="" label="Image4 Path" description="Images1 path URL" />
+
+
+
+<param name="label4" type="text" size="60" default="" label="Label4" description="" />
+
+<param name="desc4" type="textarea" rows="7" cols="35"   default="" label="Desc 4" description="You Can Add HTML Here" />
+
+
+
+<param name="link4" type="text" size="60" default="" label="Image4 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 4 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 5 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 5&lt;/div&gt;" />
+
+<param name="img5" type="text" size="60" default="" label="Image5 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label5" type="text" size="60" default="" label="Image5 Label" description="Images1 Label" />-->
+
+
+
+<param name="label5" type="text" size="60"  default="" label="Label5" description="" />
+
+<param name="desc5" type="textarea" rows="7" cols="35"   default="" label="Desc 5" description="You Can Add HTML Here" />
+
+
+
+<param name="link5" type="text" size="60" default="" label="Image5 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 5 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 6 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 6&lt;/div&gt;" />
+
+<param name="img6" type="text" size="60" default="" label="Image6 Path" description="Images1 path URL" />
+
+
+
+<param name="label6" type="text" size="60"  default="" label="Label6" description="" />
+
+<param name="desc6" type="textarea" rows="7" cols="35"   default="" label="Desc 6" description="You Can Add HTML Here" />
+
+
+
+<param name="link6" type="text" size="60" default="" label="Image6 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 6 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 7 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 7&lt;/div&gt;" />
+
+<param name="img7" type="text" size="60" default="" label="Image7 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label7" type="text" size="60" default="" label="Image1 Labe7" description="Images1 Label" />-->
+
+
+
+<param name="label7" type="text" size="60"  default="" label="Label7" description="" />
+
+<param name="desc7" type="textarea" rows="7" cols="35"   default="" label="Desc 7" description="You Can Add HTML Here" />
+
+
+
+<param name="link7" type="text" size="60" default="" label="Image7 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 7 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 8 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 8&lt;/div&gt;" />
+
+<param name="img8" type="text" size="60" default="" label="Image8 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label8" type="text" size="60" default="" label="Image8 Label" description="Images1 Label" />-->
+
+
+
+<param name="label8" type="text" size="60"  default="" label="Label8" description="" />
+
+<param name="desc8" type="textarea" rows="7" cols="35"   default="" label="Desc 8" description="You Can Add HTML Here" />
+
+
+
+<param name="link8" type="text" size="60" default="" label="Image8 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 8 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 9 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 9&lt;/div&gt;" />
+
+<param name="img9" type="text" size="60" default="" label="Image9 Path" description="Images1 path URL" />
+
+
+
+<!--<param name="label9" type="text" size="60" default="" label="Image9 Label" description="Images1 Label" />-->
+
+
+
+<param name="label9" type="text" size="60"  default="" label="Label9" description="" />
+
+<param name="desc9" type="textarea" rows="7" cols="35"   default="" label="Desc 9" description="You Can Add HTML Here" />
+
+
+
+<param name="link9" type="text" size="60" default="" label="Image9 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 9 parameter-->
+
+
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+
+<!--Image 10 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 10&lt;/div&gt;" />
+
+<param name="img10" type="text" size="60" default="" label="Image10 Path" description="Images1 path URL" />
+
+
+
+<param name="label10" type="text" size="60"  default="" label="Label10" description="" />
+
+<param name="desc10" type="textarea" rows="7" cols="35"   default="" label="Desc 10" description="You Can Add HTML Here" />
+
+
+
+<param name="link10" type="text" size="60" default="" label="Image10 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 10 parameter-->
+
+
+<!--Image 11 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 11&lt;/div&gt;" />
+
+<param name="img11" type="text" size="60" default="" label="Image11 Path" description="Images1 path URL" />
+
+
+
+<param name="label11" type="text" size="60"  default="" label="Label11" description="" />
+
+<param name="desc11" type="textarea" rows="7" cols="35"   default="" label="Desc 11" description="You Can Add HTML Here" />
+
+
+
+<param name="link11" type="text" size="60" default="" label="Image11 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 11 parameter-->
+
+
+
+
+
+<!--Image 12 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 12&lt;/div&gt;" />
+
+<param name="img12" type="text" size="60" default="" label="Image12 Path" description="Images1 path URL" />
+
+
+
+<param name="label12" type="text" size="60"  default="" label="Label12" description="" />
+
+<param name="desc12" type="textarea" rows="7" cols="35"   default="" label="Desc 12" description="You Can Add HTML Here" />
+
+
+
+<param name="link12" type="text" size="60" default="" label="Image12 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 12 parameter-->
+
+
+
+<!--Image 13 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 13&lt;/div&gt;" />
+
+<param name="img13" type="text" size="60" default="" label="Image13 Path" description="Images1 path URL" />
+
+
+
+<param name="label13" type="text" size="60"  default="" label="Label13" description="" />
+
+<param name="desc13" type="textarea" rows="7" cols="35"   default="" label="Desc 13" description="You Can Add HTML Here" />
+
+
+
+<param name="link13" type="text" size="60" default="" label="Image13 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 13 parameter-->
+
+
+<!--Image 14 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 14&lt;/div&gt;" />
+
+<param name="img14" type="text" size="60" default="" label="Image14 Path" description="Images1 path URL" />
+
+
+
+<param name="label14" type="text" size="60"  default="" label="Label14" description="" />
+
+<param name="desc14" type="textarea" rows="7" cols="35"   default="" label="Desc 14" description="You Can Add HTML Here" />
+
+
+
+<param name="link14" type="text" size="60" default="" label="Image14 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 14 parameter-->
+
+<!--Image 15 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 15&lt;/div&gt;" />
+
+<param name="img15" type="text" size="60" default="" label="Image15 Path" description="Images1 path URL" />
+
+
+
+<param name="label15" type="text" size="60"  default="" label="Label15" description="" />
+
+<param name="desc15" type="textarea" rows="7" cols="35"   default="" label="Desc 15" description="You Can Add HTML Here" />
+
+
+
+<param name="link15" type="text" size="60" default="" label="Image15 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 15 parameter-->
+
+
+<!--Image 16 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 16&lt;/div&gt;" />
+
+<param name="img16" type="text" size="60" default="" label="Image16 Path" description="Images1 path URL" />
+
+
+
+<param name="label16" type="text" size="60"  default="" label="Label16" description="" />
+
+<param name="desc16" type="textarea" rows="7" cols="35"   default="" label="Desc 16" description="You Can Add HTML Here" />
+
+
+
+<param name="link16" type="text" size="60" default="" label="Image16 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 16 parameter-->
+
+
+<!--Image 17 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 17&lt;/div&gt;" />
+
+<param name="img17" type="text" size="60" default="" label="Image17 Path" description="Images1 path URL" />
+
+
+
+<param name="label17" type="text" size="60"  default="" label="Label17" description="" />
+
+<param name="desc17" type="textarea" rows="7" cols="35"   default="" label="Desc 17" description="You Can Add HTML Here" />
+
+
+
+<param name="link17" type="text" size="60" default="" label="Image17 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 17 parameter-->
+
+<!--Image 18 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 18&lt;/div&gt;" />
+
+<param name="img18" type="text" size="60" default="" label="Image18 Path" description="Images1 path URL" />
+
+
+
+<param name="label18" type="text" size="60"  default="" label="Label18" description="" />
+
+<param name="desc18" type="textarea" rows="7" cols="35"   default="" label="Desc 18" description="You Can Add HTML Here" />
+
+
+
+<param name="link18" type="text" size="60" default="" label="Image18 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 18 parameter-->
+
+
+
+<!--Image 19 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 19&lt;/div&gt;" />
+
+<param name="img19" type="text" size="60" default="" label="Image19 Path" description="Images1 path URL" />
+
+
+
+<param name="label19" type="text" size="60"  default="" label="Label19" description="" />
+
+<param name="desc19" type="textarea" rows="7" cols="35"   default="" label="Desc 19" description="You Can Add HTML Here" />
+
+
+
+<param name="link19" type="text" size="60" default="" label="Image19 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 19 parameter-->
+
+
+<!--Image 20 Parameter-->
+
+<param type="spacer" default="&lt;div style=&quot;color:#444; background:#ccc; height:12px; font-size:11px; font-weight:bold; padding:3px; margin:0; text-align:center;&quot;&gt;IMAGE 20&lt;/div&gt;" />
+
+<param name="img20" type="text" size="60" default="" label="Image20 Path" description="Images1 path URL" />
+
+
+
+<param name="label20" type="text" size="60"  default="" label="Label20" description="" />
+
+<param name="desc20" type="textarea" rows="7" cols="35"   default="" label="Desc 20" description="You Can Add HTML Here" />
+
+
+
+<param name="link20" type="text" size="60" default="" label="Image20 link" description="ie:http://www.google.com" />
+
+
+
+<!--End of image 20 parameter-->
+
+
+
+</params>
+
+
+
+</install>
+
+
+
+
+
+
+

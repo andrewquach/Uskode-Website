@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.21">
+
+	<name>DFContact</name>
+	<creationDate>2011-10-10 00:01</creationDate>
+	<author>Daniel Filzhut</author>
+	<authorEmail>joomla@filzhut.de</authorEmail>
+	<authorUrl>http://software.filzhut.de</authorUrl>
+	<copyright>Copyright 2007 - 2010 by Daniel Filzhut</copyright>
+	<license>GNU GPL</license>
+	<version>1.5.21</version>
+	<description>DFContact is a Joomla! contact form component which is extremly easy to configure and has captcha support using reCAPTCHA and com_securityimages. It displays contact data and a contact form on the same page. The fields in the form can be choosen and set as optional or duty fields. Availible fields: Textarea, checkbox, company, title, name, position, street, street number, postbox, zip, city, state, country, geo-coordinates, phone, mobile, fax, email, aim, icq, yahoo, msn. Addresses can be displayed in american, british, french or german format. Includes english, french, german, catalan, czech, danish, dutch, hungarian, italian, japanese, norwegian, polish, portuguese, romanian, russian, spanish, swedish and ukrainian language support, easy integration of other languages due to the use of language constant files. It easily integrates with com_securityimages to display a captcha as spam-prevention. Released under GNU General Public License (GPL).</description>
+	
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<install>
+		<sql></sql>
+	</install>
+	<uninstall>
+		<sql></sql>
+	</uninstall>
+	
+	<files>
+		<filename>dfcontact.php</filename>
+		<folder>recaptcha</folder>
+	</files>
+	
+	<languages>
+		<language tag="bs-BA">bs-BA.com_dfcontact.ini</language>
+		<language tag="ca-ES">ca-ES.com_dfcontact.ini</language>
+		<language tag="cs-CZ">cs-CZ.com_dfcontact.ini</language>
+		<language tag="da-DK">da-DK.com_dfcontact.ini</language>
+		<language tag="de-DE">de-DE.com_dfcontact.ini</language>
+		<language tag="en-GB">en-GB.com_dfcontact.ini</language>
+		<language tag="es-ES">es-ES.com_dfcontact.ini</language>
+		<language tag="fr-FR">fr-FR.com_dfcontact.ini</language>
+		<language tag="hr-HR">hr-HR.com_dfcontact.ini</language>
+		<language tag="hu-HU">hu-HU.com_dfcontact.ini</language>
+		<language tag="it-IT">it-IT.com_dfcontact.ini</language>
+		<language tag="ja-JP">ja-JP.com_dfcontact.ini</language>
+		<language tag="nb-NO">nb-NO.com_dfcontact.ini</language>
+		<language tag="nl-NL">nl-NL.com_dfcontact.ini</language>
+		<language tag="pl-PL">pl-PL.com_dfcontact.ini</language>
+		<language tag="pt-BR">pt-BR.com_dfcontact.ini</language>
+		<language tag="ro-RO">ro-RO.com_dfcontact.ini</language>
+		<language tag="ru-RU">ru-RU.com_dfcontact.ini</language>
+		<language tag="sr-RS">sr-RS.com_dfcontact.ini</language>
+		<language tag="sr-YU">sr-YU.com_dfcontact.ini</language>
+		<language tag="sv-SE">sv-SE.com_dfcontact.ini</language>
+		<language tag="ua-UA">ua-UA.com_dfcontact.ini</language>
+	</languages>
+	
+	<media destination="com_dfcontact">
+	</media>
+
+	<administration>
+	
+		<menu>DFContact</menu>
+
+		<files folder="admin">
+			<filename>admin.dfcontact.html.php</filename>
+			<filename>admin.dfcontact.php</filename>
+			<filename>config.dfcontact.php</filename>
+			<filename>toolbar.dfcontact.html.php</filename>
+			<filename>toolbar.dfcontact.php</filename>
+			<folder>tmpl</folder>
+			<filename>logo-filzhut-de.png</filename>
+		</files>
+
+		<languages>
+			<language tag="bs-BA">bs-BA.com_dfcontact.ini</language>
+			<language tag="ca-ES">ca-ES.com_dfcontact.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_dfcontact.ini</language>
+			<language tag="da-DK">da-DK.com_dfcontact.ini</language>
+			<language tag="de-DE">de-DE.com_dfcontact.ini</language>
+			<language tag="en-GB">en-GB.com_dfcontact.ini</language>
+			<language tag="es-ES">es-ES.com_dfcontact.ini</language>
+			<language tag="fr-FR">fr-FR.com_dfcontact.ini</language>
+			<language tag="hr-HR">hr-HR.com_dfcontact.ini</language>
+			<language tag="hu-HU">hu-HU.com_dfcontact.ini</language>
+			<language tag="it-IT">it-IT.com_dfcontact.ini</language>
+			<language tag="ja-JP">ja-JP.com_dfcontact.ini</language>
+			<language tag="nb-NO">nb-NO.com_dfcontact.ini</language>
+			<language tag="nl-NL">nl-NL.com_dfcontact.ini</language>
+			<language tag="pl-PL">pl-PL.com_dfcontact.ini</language>
+			<language tag="pt-BR">pt-BR.com_dfcontact.ini</language>
+			<language tag="ro-RO">ro-RO.com_dfcontact.ini</language>
+			<language tag="ru-RU">ru-RU.com_dfcontact.ini</language>
+			<language tag="sr-RS">sr-RS.com_dfcontact.ini</language>
+			<language tag="sr-YU">sr-YU.com_dfcontact.ini</language>
+			<language tag="sv-SE">sv-SE.com_dfcontact.ini</language>
+			<language tag="ua-UA">ua-UA.com_dfcontact.ini</language>
+		</languages>
+
+	</administration>
+</install>

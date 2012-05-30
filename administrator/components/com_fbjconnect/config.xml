@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+			  <param name="appid" type="text" default="" label="App ID" description="Enter App ID" />
+			  <param name="appsecret" type="text" default="" label="App Secret" description="Enter App Secret" />
+			  
+			  <param name="connect-type" type="list" default="1" label="Connect Type" description="Wheather to create users automatically or let them choose!">
+				<option value="0">Users can choose username or link account on next page.</option>
+				<option value="1">ONE CLICK - Auto registration &amp; login, they will not see registration page.</option>
+			 </param>
+			  <param name="link-with-email" type="list" default="1" label="Auto Connect if Email Exist" description="If email exists in users table, this will auto link a Facebook User with existing joomla account.">
+				<option value="0">Do nothing.</option>
+				<option value="1">Auto link if email matches with existing joomla user.</option>
+			 </param>	
+			  <param name="length-of-randstring" type="list" default="4" label="Random String after Username" description="Length of random string after Username.">
+				<option value="0">0 (Not recommended, users might not be able to register if another same username exist.) </option>
+				<option value="2">2</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+				<option value="10">10</option>
+				<option value="12">12</option>
+			 </param>	
+			 
+			 <field name="list-no-of-reg-users" type="list" default="10" label="Numbers of Last Registered users" description="Last Registered users list in admin panel">
+				<option value="10">10</option>
+				<option value="20">20</option>
+				<option value="30">30</option>
+				<option value="40">40</option>
+			 </field>
+ 		 
+			  <param name="emailsender" type="radio" default="1" label="Send Email Using" description="If joomla emailer not sending fb registration details, try switching to fbgconnect mailer, but its just assumption!">
+				<option value="0">Joomla Mailer</option>
+				<option value="1">FbG Mailer</option>
+			 </param>
+			<param name="viewlayout" type="radio" default="1" label="Layout" description="Choose how registration page will display.">
+				<option value="0">Horizontal</option>
+				<option value="1">Vertial</option>
+			 </param>
+	</params>
+</config>

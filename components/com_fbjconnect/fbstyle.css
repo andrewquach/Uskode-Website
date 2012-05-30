@@ -1,0 +1,91 @@
+/* CSS Document */
+h1 {font-size: large;border-bottom: 1px dotted #333333;}
+fieldset {padding: 20px;border: 1px solid #333333;
+}
+.column_block {width: 400px;float: left;margin-right: 10px;margin-left: 10px;padding: 20px;height: 150px;
+}
+.column_block label {display: block;margin: 5px;
+}
+.submitbutt {display: block;clear: both;margin: 20px;
+}
+.wrapper .notic {font: 14px Arial, Helvetica, sans-serif;color: #666666;
+}
+.heading_class {
+	background: #006699;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+}
+.err_class {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #FF0000;
+}
+.table_bg {
+	background: #EAFFFF;
+}
+.or_class {
+	font-size: large;
+}
+.additional_permission_class {
+	padding: 0px;
+	margin: 20px;
+	background: #FFFFCC;
+	color: #333333;
+	border: 1px dotted #0099CC;
+}
+.additional_permission_class h2 {
+	margin: 0px;
+	padding: 5px;
+	background: #FFCC99;
+	color: #333333;
+	font-size: large;
+	font-weight: bold;
+}
+.additional_permission_class a {
+	color: #666666;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.additional_permission_class a:visited {
+	color: #666666;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.additional_permission_class a:hover {
+	color: #996600;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#box-table-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#box-table-a th
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #b9c9fe;
+	border-top: 4px solid #aabcfe;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+#box-table-a td
+{
+	padding: 8px;
+	background: #e8edff; 
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+#box-table-a tr:hover td
+{
+	background: #d0dafd;
+	color: #339;
+}

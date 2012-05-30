@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+ <name>Facebook Connect Login Module</name>
+ <author>Saran Chamling</author>
+ <creationDate>19 Fev, 2011</creationDate>
+ <copyright>Copyright (C) 2011 http://www.sikkimonline.info. All rights reserved.</copyright>
+ <license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+ <version>1D</version>
+ <description></description>
+ <files>
+	  <filename module="mod_jfbgconnect">mod_jfbgconnect.php</filename>
+	  <filename>mod_jfbgconnect.xml</filename>
+	  <filename>index.html</filename>
+	  <filename>helper.php</filename>
+	  <filename>fgimage.jpg</filename>
+	  <filename>ajax-loader.gif</filename>
+	  <filename>tmpl/default.php</filename>
+	  <filename>tmpl/big-black.gif</filename>
+	  <filename>tmpl/big-blue.gif</filename>
+	  <filename>tmpl/big-green.gif</filename>
+	  <filename>tmpl/big-purple.gif</filename>
+	  <filename>tmpl/big-tan.gif</filename>
+	  <filename>tmpl/small-black.gif</filename>
+	  <filename>tmpl/small-blue.gif</filename>
+	  <filename>tmpl/small-green.gif</filename>
+	  <filename>tmpl/small-purple.gif</filename>
+	  <filename>tmpl/small-tan.gif</filename>
+	  <filename>tmpl/pwd.png</filename>
+	  <filename>tmpl/index.html</filename>
+ </files>
+ 		<languages>
+			<language tag="en-GB">en-GB.mod_fbjconnect.ini</language>
+			<language tag="es-ES">es-ES.mod_fbjconnect.ini</language>
+			<language tag="el-GR">el-GR.mod_fbjconnect.ini</language>
+		</languages>
+  <!-- Optional parameters -->
+  <params>
+<param name="show-only-button" type="radio" default="0" label="Show Only Button?" description="Show Only Login button or whole login form ?">
+	<option value="0">Show Login form</option>
+	<option value="1">Only Login Button</option>
+ </param>
+ <param name="usesecure" type="radio" default="0" label="Encrypt Login Form" description="Submit encrypted login data (requires SSL)">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+</param>
+ <param name="@spacer" type="spacer" default="" label="" description="" />
+ 
+  <param name="fbshowprofileimage" type="radio" default="1" label="Show Facebook profile Image" description="Show Facebook user profile Image?">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+ </param>
+   <param name="linkprofileimage" type="radio" default="1" label="Link Profile Pic to Facebook Profile?" description="Links profile Image with facebook profile, It will open facebook profile in new window.">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+ </param>
+  <param name="fbavatarimgsize" type="list" default="large" label="Profile Image Size" description="Facebook Profile Image Size on Site.">
+	<option value="small">Small</option>
+	<option value="normal">Normal</option>
+	<option value="large">Large</option>
+</param>
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+  <param name="facebook-button-type" type="list" default="small-blue.gif" label="Facebook Fancy Button" description="Select a facebook login button to suit your design.">
+	<option value="big-black.gif">Big Black</option>
+	<option value="big-blue.gif">Big Blue</option>
+	<option value="big-green.gif">Big Green</option>
+	<option value="big-purple.gif">Big Purple</option>
+	<option value="big-tan.gif">Big Tan</option>
+	<option value="small-black.gif">Small Black</option>
+	<option value="small-blue.gif">Small Blue</option>
+	<option value="small-green.gif">Small Green</option>
+	<option value="small-purple.gif">Small Purple</option>
+	<option value="small-tan.gif">Small Tan</option>
+</param>
+<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_forgotpass" type="radio" default="1" label="Forgot Password link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_forgotusername" type="radio" default="1" label="Forgot Username link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_manualreg" type="radio" default="0" label="Registration link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="author-initial" type="radio" default="1" label="Show Author's Initial" description="A Small Author's initial will be shown on module pages if enabled. Please consider a small donation if you wish to disable it ;)">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>	
+		<param name="link-text-margin-left" type="text" default="5" label="Text Links Margin Left" description="Left margin of Text links." />
+		<param name="link-text-margin-right" type="text" default="0" label="Text Links Margin Right" description="Right margin of Text links" />
+		<param name="button-margin-left" type="text" default="5" label="Button Margin Left" description="Button margin of Text links." />
+		<param name="button-margin-right" type="text" default="0" label="Button Links Margin Right" description="Button margin of Text links" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="additionalcss" rows="10" cols="50" type="textarea" default=".skmfbdivstyle {z-index:1000;width:500px;height:40px;border:solid 1px #c0c0c0;color:#333333;left:35%;margin-left: -70px;background: #FFCCCC;font: bold medium/35px Arial, Helvetica, sans-serif;position: absolute;top: 40%;}" label="Additional Css" description="Includes the css style of notification messages which appears when user clicks login and log out button. Additional css can also be added in the box."  />
+
+  </params>
+</install>

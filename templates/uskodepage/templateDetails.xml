@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template" client="site">
+	<name>uskodepage</name>
+	<creationDate>19 Septemper 2011</creationDate>
+	<author>DaBao</author>
+	<authorEmail>dabao@dabao.vn</authorEmail>
+	<authorUrl>http://dabao.vn</authorUrl>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license></license>
+	<version>1.5.0</version>
+	<description>USKODE innerpage</description>
+
+  <files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>index.html</filename>
+	</files> 
+  <positions>
+    <position>breadcrumb</position>
+    <position>left</position>
+    <position>right</position>
+    <position>footer</position>
+  </positions>
+</install>

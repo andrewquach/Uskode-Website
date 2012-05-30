@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>Simple Email Form</name> 
+ 
+    <!-- Name of the Author -->
+        <author>unlikelysource.com</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>2011-09-01</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>All rights reserved by unlikelysource.com (c) 2010 - 2011</copyright> 
+ 
+    <!-- License Information -->
+        <license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>hit@unlikelysource.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.unlikelysource.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.1.12</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Presents a simple email form with up to 6 fields + CAPTCHA + 16 languages</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_simpleemailform">mod_simpleemailform.php</filename>
+                <filename>translate.de.ini</filename>
+                <filename>translate.dk.ini</filename>
+                <filename>translate.el.ini</filename>
+                <filename>translate.en.ini</filename>
+                <filename>translate.es.ini</filename>
+                <filename>translate.et.ini</filename>
+                <filename>translate.fr.ini</filename>
+                <filename>translate.he.ini</filename>
+                <filename>translate.hu.ini</filename>
+                <filename>translate.it.ini</filename>
+                <filename>translate.nl.ini</filename>
+                <filename>translate.pl.ini</filename>
+                <filename>translate.pt-br.ini</filename>
+                <filename>translate.ru.ini</filename>
+                <filename>translate.se.ini</filename>
+                <filename>translate.tr.ini</filename>
+                <filename>index.html</filename>
+				<filename>FreeSansBold.ttf</filename>
+                <filename>Image.php</filename>
+                <filename>Text.php</filename>
+                <filename>CAPTCHA.php</filename>
+                <filename>Password.php</filename>
+                <filename>PEAR.php</filename>
+                <filename>PEAR5.php</filename>
+                <filename>email_test.php</filename>
+        </files>
+ 
+		<!-- Optional parameters -->
+		<params>
+                <param name="mod_SEF_defaultLang" type="radio" default="en" label="Default Language" description="Choose the default language" >
+					<option value="dk">Dansk</option>
+					<option value="de">Deutsch</option>
+					<option value="el">Ελληνικά (Greek)</option>
+					<option value="en">English</option>
+					<option value="es">Español</option>
+					<option value="et">Eesti</option>
+					<option value="fr">Français</option>
+					<option value="he">Hebrew</option>
+					<option value="hu">magyar</option>
+					<option value="it">Italiano</option>
+					<option value="pl">Polski</option>
+					<option value="pt-br">Português (Brazil)</option>
+					<option value="nl">Nederlandse</option>
+					<option value="ru">русский (Russian)</option>
+					<option value="se">Svenska</option>
+					<option value="tr">Türkçe (Turkish)</option>
+				</param>
+                <param name="mod_SEF_emailTo"      type="text" size="40" default=""  label="Send Results To" description="Send results to this email address" />
+                <param name="mod_SEF_emailCC"      type="text" size="40" default=""  label="Send Results CC" description="Send a CC email of results to this email address" />
+                <param name="mod_SEF_emailBCC"     type="text" size="40" default=""  label="Send Results BCC" description="Send a BCC email of results to this email address" />
+                <param name="mod_SEF_emailFile"    type="text" size="60" default=""  label="Directory to Save Attachments" description="Enter the absolute directory path for email attachment files" />
+                <param name="mod_SEF_cssClass"     type="text" size="20" default=""  label="Name of CSS Class" description="Enter the name of a CSS class to use with the form" />
+                <param name="mod_SEF_labelAlign"   type="radio" 		 default="L" label="Label Alignment" description="Choose to have the labels aligned LEFT,RIGHT, or CENTER" >
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+					<option value="center">Center</option>
+				</param>
+                <param name="mod_SEF_useCaptcha"   type="radio"          default="N" label="Use Captcha" description="To use a 'Captcha' to foil spammers, select 'I' for an image captcha (requires additional configuration), or 'T' for a text captcha." >
+					<option value="N">No Captcha</option>
+					<option value="I">Image Captcha</option>
+					<option value="T">Text Captcha</option>
+				</param>
+                <param name="mod_SEF_captchaDir"   		type="text" size="60"  default=""        label="Directory to Write Captchas" description="Enter the absolute directory path where the module can write 'captchas' (i.e. /var/www/application/images" />
+                <param name="mod_SEF_captchaURL"   		type="text" size="60"  default=""        label="URL for Captcha Directory" description="Enter a URL which corresponds with the Captcha Directory (above)" />
+                <param name="mod_SEF_captchaLen"   		type="text" size="4"   default="8"       label="Captcha Word Lengh" description="Enter the desired Captcha word length (number of characters)" />
+                <param name="mod_SEF_captchaSize"  		type="text" size="4"   default="24"      label="Captcha Font Size" description="Enter the desired Captcha font size" />
+                <param name="mod_SEF_captchaWidth"  	type="text" Width="4"  default="200"     label="Captcha Width" description="Enter the desired Captcha width in pixels" />
+                <param name="mod_SEF_captchaHeight"  	type="text" Height="4" default="80"      label="Captcha Height" description="Enter the desired Captcha height in pixels" />
+                <param name="mod_SEF_captchaTxtColor"  	type="text" size="8"   default="#000000" label="Captcha Text Color" description="Enter the desired Captcha text color" />
+                <param name="mod_SEF_captchaLinesColor" type="text" size="8"   default="#FFFF00" label="Captcha Lines Color" description="Enter the desired Captcha lines color" />
+                <param name="mod_SEF_captchaBgColor"  	type="text" size="8"   default="#BFBFBF" label="Captcha Background Color" description="Enter the desired Captcha background color" />
+                <param name="mod_SEF_subjectline"  		type="text" size="40"  default="Please Contact Me" label="Subject Line" description="This is the subject line of the email which will be sent when the form is submitted (i.e. http://example.com/images)" />
+                <param name="mod_SEF_subjectsize"  		type="text" size="4"   default="60"      label="Size of Subject Line" description="The size of the 1st subject which will appear in your email form" />
+                <param name="mod_SEF_subjectlabel" 		type="text" size="40"  default="Subject" label="Label for Subject Line" description="The label for the 1st subject which will appear in your email form" />
+                <param name="mod_SEF_fromsize"     		type="text" size="4"   default="40"      label="Size of From Field" description="The size of the 1st field which will appear in your email form" />
+                <param name="mod_SEF_fromlabel"  		type="text" size="40"  default="From (email)" label="Label for From Field" description="The label for the 'From' field which will appear in your email form" />
+                <param name="mod_SEF_errorTxtColor"  	type="text" size="8"   default="red"     label="Error Text Color" description="Enter the desired HTML text color for errors" />
+                <param name="mod_SEF_successTxtColor"  	type="text" size="8"   default="green"   label="Success Text Color" description="Enter the desired HTML text color for success" />                
+                <param name="mod_SEF_field1active" 		type="radio"           default="N"       label="Activate Field 1" description="Select 'Y' if you want to activate field 1 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option>
+				</param>
+                <param name="mod_SEF_field1size"   type="text" size="4"   default="40"      label="Size of Field 1" description="The size of the From field which will appear in your email form" />
+                <param name="mod_SEF_field1label"  type="text" size="40"  default="Field 1" label="Label for Field 1" description="The label for the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field1maxx"   type="text" size="2"   default="255"     label="Max length of Field 1" description="Maximum number of characters that the field accepts" /> <!-- rcl added--> 
+                <param name="mod_SEF_field2active" type="radio"           default="N"       label="Activate Field 2" description="Select 'Y' if you want to activate field 2 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option>
+				</param>
+                <param name="mod_SEF_field2size"   type="text" size="4"  default="40"      label="Size of Field 2" description="The size of the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field2label"  type="text" size="40" default="Field 2" label="Label for Field 2" description="The label for the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field2maxx"   type="text" size="2"  default="255"     label="Max length of Field 2" description="Maximum number of characters that the field accepts" /> <!-- rcl added--> 
+                <param name="mod_SEF_field3active" type="radio"          default="N"       label="Activate Field 3" description="Select 'Y' if you want to activate field 3 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option>
+				</param>
+                <param name="mod_SEF_field3size"   type="text" size="4"  default="40"      label="Size of Field 3" description="The size of the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field3label"  type="text" size="40" default="Field 3" label="Label for Field 3" description="The label for the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field3maxx"   type="text" size="2"  default="255"     label="Max length of Field 3" description="Maximum number of characters that the field accepts" /> <!-- rcl added--> 
+                <param name="mod_SEF_field4active" type="radio"          default="N"       label="Activate Field 4" description="Select 'Y' if you want to activate field 4 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option>
+				</param>
+                <param name="mod_SEF_field4size"   type="text" size="4"  default="40" 	   label="Size of Field 4" description="The size of the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field4label"  type="text" size="40" default="Field 4" label="Label for Field 4" description="The label for the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field4maxx"   type="text" size="2"  default="255"     label="Max length of Field 4" description="Maximum number of characters that the field accepts" /> <!-- rcl added--> 
+                <param name="mod_SEF_field5active" type="radio"          default="N"       label="Activate Field 5" description="Select 'Y' if you want to activate field 5 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option> 
+				</param>
+                <param name="mod_SEF_field5size"     type="text" size="4"  default="40"      label="Size of Field 5" description="The size of the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field5label"    type="text" size="40" default="Field 5" label="Label for Field 5" description="The label for the 1st field which will appear in your email form" />
+                <param name="mod_SEF_field5maxx"     type="text" size="2"  default="255"     label="Max length of Field 5" description="Maximum number of characters that the field accepts" /> <!-- rcl added--> 
+                <param name="mod_SEF_textareaActive" type="radio"          default="N"       label="Activate Textarea" description="Select 'Y' if you want to activate field 6 and 'R' to activate and make it required" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+					<option value="R">Required</option>
+				</param>
+                <param name="mod_SEF_textareaRows"  type="text" size="4"  default=""  label="Textarea rows" description="How many rows in the textarea (vertical)" />
+                <param name="mod_SEF_textareaCols"  type="text" size="4"  default=""  label="Textarea cols" description="How many columns in the textarea (horizontal)" />
+                <param name="mod_SEF_textareaLabel" type="text" size="40" default=""  label="Label for the Textarea" description="The label for the textarea" />
+                <param name="mod_SEF_uploadActive"  type="radio"		  default="N" label="Activate Email Attachment Upload Field" description="Select 'Y' if you want to activate a file upload field for email attachments" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+				</param>
+                <param name="mod_SEF_uploadAllowed" type="text" size="20" default=""               label="Allowed Attachment Filenames" description="Enter a list of allowed filename extensions separated by commas.  Example: if you want jpg,png, or gif, then enter 'jpg,png,gif'.  Leave blank to allow ANY type of file." />
+                <param name="mod_SEF_copymeLabel"   type="text" size="40" default="Send me a copy" label="Label for the Send Me A Copy Field" description="The label for the Send Me A Copy Field" />
+                <param name="mod_SEF_copymeActive"  type="radio"	      default="N"              label="Send Me A Copy Field" description="Select 'Y' if you want to activate a field which lets users send a copy to themselves" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+				</param>
+                <param name="mod_SEF_copymeAuto"  	type="radio"	      default="N"              label="Send User a Copy Automatically" description="Select 'Y' if you want to send a copy to users automatically" >
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+				</param>
+		</params>
+</install>

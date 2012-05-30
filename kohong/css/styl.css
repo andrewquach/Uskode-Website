@@ -1,0 +1,76 @@
+body{ margin:0px; padding:0px; background:url(../images/body_bg.jpg) repeat-x top #ebeae1; font-family:Georgia, "Times New Roman", Times, serif}
+img, div { behavior: url(iepngfix.htc) }
+p{ margin:0px; padding:0px;}
+#bg{background:url(../images/bg.jpg) top no-repeat ; margin:0px;}
+#hangingleaf{
+	position:absolute;
+	left: 930px;
+	top: 0px;
+}
+#hangingleafII{
+	position:absolute;
+	left: 0px;
+	top:-12px;
+}
+a{ outline:none;}
+.clr{ clear:both;}
+#main{ width:999px; margin:0 auto; padding-top:20px;position:relative }
+#nav{ height:21px; background:url(../images/nav_bg.jpg) no-repeat; width:985px; margin:0 auto; padding-top:10px; padding-bottom:10px; }
+#nav ul{margin:0px; padding:0px;}
+#nav ul li{ list-style:none; display:inline;}
+#nav ul li a{ text-decoration:none; color:#666; padding:0px 24px 10px 24px; display:block; float:left; text-align:center}
+#nav ul li a:hover{ color:#060; border-bottom:3px solid #060;}
+
+#banner{ margin:0 auto; width:985px;}
+#thumbcontainer{ text-align:center;}
+.thumb{ float:left; padding:0px 5px 0px 5px;}
+#leafup{
+	position:absolute;
+	left: 173px;
+	top: 297px;
+	z-index:5;
+}
+#flower{
+	position:absolute;
+	left: 688px;
+	top: 424px;
+}
+.tittle{ text-align:left; padding-left:20px; color:#444}
+#textcontainer{ padding:15px 15px 0px 15px; font-size:12px; font-family:Arial, Helvetica, sans-serif}
+.left{ width:500px; float:left; font-size:12px; color:#666}
+
+.right{ width:440px; float:right}
+
+#footer{ height:45px; background:url(../images/footer.jpg) no-repeat; text-align:center; padding-top:45px; font-size:11px; color:#FFF}
+
+/*-------------------inner pages--------------*/
+.leftinner{ width:220px; float:left; font-size:12px; background:#fff; padding:7px;}
+.rightinner{ width:710px; float:right;background:#fff;padding:7px;}
+#textcontainerinner{ 
+width:969px; 
+margin:0 auto; 
+padding:25px 5px 0px 5px; 
+font-size:12px; 
+font-family:Arial, Helvetica, sans-serif; 
+background: url(../images/gb.jpg) top no-repeat #F2F2F2; 
+color:#666; 
+}
+.bg2{ background:url(../images/container_bg.jpg) repeat-y;}
+.pagehead{ color:#595958; font-size:23px;}
+.leftimage{}
+.leftimage ul { margin:0px; padding:0px;}
+.leftimage ul li{ margin:0px; padding:0px; list-style:none; font-size:15px;}
+.leftimage ul li a{ color:#666; text-decoration:none;}
+.leftimage ul li a:hover{ margin:0px; padding:0px; list-style:none; font-size:15px; color:#030; }
+.tittle2{ font-size:14px; color:#060; font-weight:bold;}
+.foot{ float:right; margin:10px; border:1px solid #999}
+.price{}
+.price tr td{ border:1px solid #999; padding:5px;}
+.tablehead{ background:#360; color:#FFF;}
+.red{ color:#030; font-size:14px;}
+#booking{ color:#333}
+#booking input{ width:200px; border:1px solid #CCC}
+#booking input:hover{border:1px solid #999}
+.black{ color:#000;}
+.grey{ color:#999;}
+.text_field{ width:175px; border:1px solid #ccc;}

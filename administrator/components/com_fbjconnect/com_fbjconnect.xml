@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+        <name>fbjconnect</name>
+        <creationDate>2011-01-17</creationDate>
+        <author>Saran Chamling</author>
+        <authorEmail>saaraan@gmail.com</authorEmail>
+        <authorUrl>http://ww.sikkimonline.info</authorUrl>
+        <copyright>Copyright (C) 2011 http://www.sikkimonline.info. All rights reserved.</copyright>
+		<license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+		<version>1.7</version>
+		<description><![CDATA[[Joomla Facebook Graph Connect!] is now installed, Congratulations! <br />DO NOT forget to install mod_jfbgconnect.zip aswell.<br />Please <a href="index.php?option=com_fbjconnect">Click here</a> and fill your Facebook <b>App ID</b> and <b>App Secret</b>.]]></description>
+        <files>
+			<filename>index.html</filename>
+			<filename>fbjconnect.php</filename>
+			<filename>fbgccontroller.php</filename>
+			<filename>inc/facebook.php</filename>
+			<filename>fbstyle.css</filename>
+			<folder>views</folder>
+        </files>
+		<languages>
+			<language tag="en-GB">en-GB.com_fbjconnect.ini</language>
+			<language tag="es-GB">es-ES.com_fbjconnect.ini</language>
+			<language tag="es-GB">el-GR.com_fbjconnect.ini</language>
+		</languages>
+        <install>
+           <sql>
+                  <file driver="mysql" charset="utf8">install.sql</file>
+           </sql>
+        </install>
+        <administration>
+                <menu img="components/com_fbjconnect/facebookicon.png">Facebook Graph Connect</menu>
+                <files folder="admin">
+                        <filename>index.html</filename>
+                        <filename>admin.fbjconnect.php</filename>
+						<filename>facebookicon.png</filename>
+						<filename>facebookappid.gif</filename>
+						<filename>config.xml</filename>
+						<filename>install.sql</filename>
+						<filename>assets/facebook_48.png</filename>
+						<filename>assets/fbbackend.css</filename>
+                </files>  
+        </administration>
+</install>

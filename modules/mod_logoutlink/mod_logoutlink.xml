@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0">
+	<name>Logout Link</name>
+	<creationDate>13 August 2011</creationDate>
+	<author>MadeByChad.com</author>
+	<copyright>Copyright (C) 2011 Chad Wagner</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>chad@madebychad.com</authorEmail>
+	<authorUrl>http://www.madebychad.com/</authorUrl>
+	<version>0.1.1</version>
+	<description>The logout module is a single login/logout link. The difference is, it will include a token in the logout link and redirect to the desired page after logout</description>
+	<files>
+		<filename module="mod_logoutlink">mod_logoutlink.php</filename>
+		<filename module="mod_logoutlink">index.html</filename>
+		<filename module="mod_logoutlink">tmpl/index.html</filename>
+		<filename module="mod_logoutlink">tmpl/default.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+				<field name="logout_url" type="text" size="40" default="" label="Logout Redirect" description="The URL to redirect to after a successful logout" />
+				<field name="logout_text" type="text" size="40" default="Logout" label="Logout Text" />
+				
+				
+				
+				<field name="login_url" type="text" size="40" default="" label="Login Redirect" description="The URL to redirect to after a successful login" />
+				<field name="login_text" type="text" size="40" default="Login" label="Login Text" />
+				
+				
+			</fieldset>
+			
+				<fieldset
+				name="advanced">
+	
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			
+			</fieldset>
+			
+		</fields>
+	</config>
+</install>

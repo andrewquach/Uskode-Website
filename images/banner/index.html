@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <link href="css/style1.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	
+var current_banner = 1;
+var total_banners = 0;
+var wait = 0;
+
+function banner_init()
+{
+
+        //stop banner change if mouse over one banner
+        elements = document.getElementById('banners').getElementsByTagName('div');
+        total_banners = elements.length;
+        for (var i = 0; i < elements.length; i++) 
+        { 
+                elements[i].onmouseover = function () 
+                {
+
+                        clearTimeout(wait);
+                }
+                elements[i].onmouseout = function () 
+                {
+
+                        clearTimeout(wait);
+
+                        wait = setTimeout('nextBanner()',bannertime);
+
+                }       
+        }
+        //set navigation
+        elements = document.getElementById('banners').getElementsByTagName('ul')[0].getElementsByTagName('li');
+        total_banners = elements.length;
+        for (var i = 0; i < elements.length; i++) 
+        { 
+                elements[i].title = i + 1;
+                elements[i].onmouseover = function () 
+                {
+
+                        banner(this.title);
+                        clearTimeout(wait);
+                }
+                elements[i].onmouseout = function () 
+                {
+
+                        clearTimeout(wait);
+
+                        wait = setTimeout('nextBanner()',bannertime);
+
+                }       
+        }
+        wait = setTimeout('nextBanner()',bannertime);
+} 
+
+
+function banner(nr)
+{
+        clearTimeout(wait);
+        elements = document.getElementById('banners').getElementsByTagName('div');
+        //hide all divs
+        for (var i = 0; i < elements.length; i++) 
+        { 
+                if (nr == (i + 1))
+                {
+                        //show selected banner  
+                        elements[i].style.display = "block";
+                } else
+                {       //hide everything else
+                        elements[i].style.display = "none";     
+                }
+        }
+        wait = setTimeout('nextBanner()',bannertime);
+}
+
+
+function nextBanner() 
+{
+
+		if(current_banner < total_banners) 
+        {
+                current_banner ++; 
+        }
+
+        else
+        {       current_banner = 1;
+        }
+
+        banner(current_banner);
+		//reset style của tất cả các thành phần về ban đầu
+		for (var i = 0; i < 6; i++) 
+		{
+			$("#"+i).css("background","");
+			$("#"+i).css("color","#494949");
+		}
+		//set style cho đối tượng hiện tại
+		$("#"+current_banner).css("background","url('slider-menu-hover.jpg') repeat-x scroll transparent");
+		$("#"+current_banner).css("color","white");
+}
+
+//-->
+</SCRIPT>
+ 
+ </HEAD>
+
+ <BODY>
+    <div id="banners">
+                <div id="banner1">
+                        <img src="1.jpg">
+
+                </div>  
+                <div id="banner2">
+                        <img src="2.jpg">
+                       
+
+                </div>  
+                <div id="banner3">
+                        <img src="3.jpg">
+                      
+                </div>  
+                <div id="banner4">
+                        <img src="4.jpg">
+                     
+                </div> 
+                <div id="banner5">
+                        <img src="5.jpg">
+                     
+                </div> 				
+                <ul class="tab">
+                        
+						<li><center><a id="1" href="/1/">E-COMMERCE</a></center></li>
+                   
+						<li><center><a id="2" href="/2/">CRM</a></center></li>
+                        <li><center><a id="3" href="/3/">HRM</a></center></li>
+        
+		<li><center><a id="4" href="/4/">CLOUD COMPUTING</a></center></li>
+						<li><center><a id="5" href="/5/">MOBILE</a><center></li>
+                </ul>
+        </div>
+        <script>bannertime = 1000;banner_init();</script>
+
+
+ </BODY>
+</HTML>

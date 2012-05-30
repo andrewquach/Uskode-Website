@@ -1,0 +1,506 @@
+/*
+Theme Name: KastolinoMag
+Theme URI: http://www.simplewpthemes.com
+Version: 1.0
+Author: sin2384
+Author URI: http://www.simplewpthemes.com
+Description: Free Wordpress theme by <a href="http://www.simplewpthemes.com/">SimpleWPThemes.com</a>. Please read READ ME.TXT for usage instructions!
+*/
+@import url("css/comments.css");
+@import url("css/reset.css");
+@import url("css/slide.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+/***************LINKS*************************/
+
+a:link, a:visited {
+  color: #9e3c44;
+  text-decoration: none;
+}
+a:hover {
+  color: #393b48;
+}
+/***************END LINKS*************************/
+
+html body {
+  background: url(images/bg.jpg);
+  font-size: 12px;
+  font-family: 'DroidSansRegular', Arial, Verdana, Tahoma;
+  line-height: 1.5em;
+  color: #878684;
+}
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/***************LAYOUT*************************/
+
+#top-wrap {
+  width: 100%;
+  height: 426px;
+  margin-bottom: 25px;
+  background: url(images/header.jpg) repeat-x;
+  position: relative;
+  z-index: 88;
+}
+.shorter {
+  height: 233px !important;
+}
+#mainwrap {
+  margin: 0px auto 0;
+  width: 960px;
+}
+.single #mainwrap, .page #mainwrap {
+  margin: 0 auto !important;
+}
+#header {
+  width: 960px;
+  height: 140px;
+  margin: 0 auto;
+}
+#blogtitle {
+  text-transform: uppercase;
+  float: left;
+  margin-top: 60px;
+}
+.adv {
+  float: right;
+  margin: 45px 0px 0 0;
+  background: url(images/adv.png);
+  padding: 5px;
+}
+
+
+/* -------- START PAGE MENU -------- */
+
+#top {
+  clear: both;
+  margin: 0px auto 0;
+  width: 960px;
+  height: 59px;
+  background: url(images/top.png) repeat-x;
+}
+#top li {
+  float: left;
+  line-height: 55px;
+  background: url(images/sep.gif) no-repeat scroll right;
+}
+#top li a {
+  float: left;
+  display: block;
+  padding: 0 15px 0 15px;
+  color: #fff;
+  font-size: 11px;
+  text-shadow: 1px 0 1px #000;
+  text-transform: uppercase;
+}
+#top li.current_page_item a, #top li a:hover {
+  color: #fff;
+  background: url(images/hover.png) repeat-x;
+}
+#top li li {
+  display: none;
+}
+/* -------- END PAGE MENU -------- */
+
+.aboutimage {
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin: 5px 10px 0px 0px;
+}
+#s {
+  width: 200px;
+  height: 13px;
+  padding: 9px 0 9px 5px;
+  color: #4b1418;
+  font-size: 11px;
+  background: url(images/input.png) no-repeat scroll center left;
+  border: 0 !important;
+  margin-right: -40px;
+}
+.sim {
+  margin-top: 3px;
+}
+
+
+*+html #s {
+  padding-bottom: 7px;
+}
+#top #search {
+  float: right;
+  margin-right: 25px;
+  margin-top: 13px;
+}
+#contentwrap {
+  float: left;
+  width: 600px;
+}
+#sidebar {
+  float: right;
+  width: 300px;
+  margin-right: 10px;
+  padding-top: 2px;
+  display: inline;
+}
+#sidebar-wrap {
+  clear: both;
+  width: 100%;
+  background: #9b3f46 url(images/circle.jpg) repeat-x scroll top;
+}
+#sidebar2 {
+  width: 960px;
+  margin: 0px auto 0;
+  padding: 60px 0 0;
+  overflow: hidden;
+}
+#footer1, #footer2, #footer3 {
+  width: 210px;
+  float: left;
+  margin-right: 40px;
+}
+#footer4 {
+  margin-right: 0;
+  float: left;
+  width: 210px;
+}
+#sidebar2 h3 {
+  color: #3b090d;
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-family: 'DroidSansRegular';
+  font-weight: normal;
+}
+.widget {
+  margin-bottom: 55px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #6d2228;
+  line-height: 22px;
+}
+.widget a, .widget a:visited {
+  color: #6d2228;
+}
+.widget a:hover {
+  color: #551a1f;
+  text-decoration: underline;
+}
+.widget ul li {
+  padding: 6px 0 6px 0px;
+  margin-left: 0;
+}
+.widget ul.children {
+  margin: 6px 0 -6px 0;
+}
+
+/* -------- ADVERT -------- */
+
+.add1 {
+  clear: both;
+  float: left;
+  margin: 0 0  10px 5px;
+  display: inline;
+}
+.add2 {
+  float: right;
+  margin: 0 5px 10px 0;
+  display: inline;
+}
+
+/* -------- END ADVERT -------- */
+
+.custom_images img {
+  margin: 0px 5px 0px 0px;
+  padding: 0;
+}
+#footerw {
+  width: 100%;
+  clear:both;
+  background: #000;
+  height: 60px;
+}
+#footer {
+  width: 960px;
+  padding: 20px 0 0;
+  overflow: hidden;
+  color: #414141;
+  margin: 0 auto;
+}
+#footer a, #footer a:visited {
+  color: #9e3c44;
+}
+#footer a:hover {
+  color: #9e3c44;
+  text-decoration: underline;
+}
+/* -------- END WP LAYOUT -------- */
+
+/* -------- START WP STYLES -------- */
+
+#sidebar h3 {
+  padding: 0 0 10px 0;
+  font-size: 16px;
+  color: #393b48;
+}
+.side-widget {
+  clear: both;
+  width: 300px;
+  padding: 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#sidebar ul {
+  margin-top: -5px;
+}
+#sidebar ul.children {
+  margin: 6px 0 -6px 0;
+}
+#sidebar ul li {
+  padding: 6px 0 6px 0;
+  margin-left: 0;
+  border-bottom: 1px solid #d2d0cc;
+}
+#sidebar li li {
+  border-bottom: 0;
+  border-top: 1px solid #d2d0cc;
+}
+.side-widget a, .side-widget a:visited {
+  color: #878684;
+}
+.side-widget a:hover {
+  color: #878684;
+  text-decoration: underline;
+}
+.textwidget {
+  padding: 5px;
+}
+.side-widget div {
+  padding: 5px 0;
+}
+/***************POST STYLES*************************/
+h2.title {
+  margin-bottom: 12px;
+  line-height: 18px;
+  font-size: 15px;
+  font-family: 'DroidSansRegular';
+  font-weight: 400;
+}
+h2.titles {
+  margin-bottom: 25px;
+  line-height: 29px;
+  font-size: 22px;
+  font-family: 'DroidSansRegular';
+  font-weight: 400;
+}
+h2.title a, h2.title a:visited, h2.titles a, h2.titles a:visited {
+  color: #393b48;
+}
+.meta {
+  color: #393b48;
+  text-align: right;
+  margin-top: 15px;
+  font-size: 11px;
+}
+.inleft {
+  float: left;
+  padding-top: 7px;
+}
+a.comm, a.comm:visited {
+  color: #9e3c44;
+}
+a.more-link {
+  background: url(images/more.png) no-repeat;
+  width: 81px;
+  padding: 7px 0 0 1px;
+  height: 30px;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 1px 0 1px #700000;
+  text-align: center;
+}
+.postmetadata {
+  margin-top: 15px;
+  display: block;
+}
+.leftp {
+  width: 293px;
+  float: left;
+  margin-right: 40px;
+}
+.rightp {
+  float: right;
+  width: 293px;
+}
+.clearp {
+  clear: both;
+  margin-bottom: 40px;
+}
+.post, .page {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.entry {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+  margin-top: 15px;
+}
+.entry h2 {
+  margin-bottom: 0.4em;
+}
+.entry p {
+  margin-top: 10px;
+}
+.entry img {
+  padding: 3px;
+  border: 1px solid #e1ddd3;
+  background: #eaeaea;
+}
+.post_thumbnail {
+  margin-bottom: 17px !important;
+  background: url(images/imgbg.gif) no-repeat;
+  padding: 9px !important;
+}
+.entry th {
+  padding: 0;
+  margin-right: 2px;
+}
+.entry li {
+  list-style: circle inside;
+}
+.entry ol li {
+  list-style: decimal inside;
+}
+blockquote {
+  border-left: 10px solid #666666;
+  margin-left: 20px;
+}
+blockquote p {
+  padding: 10px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 10px 0px 0px;
+}
+.alignright {
+  float: right;
+  margin: 5px 0px 0px 10px;
+}
+img.aligncenter {
+  display: block;
+  margin: 0 auto 5px;
+}
+/***************END POST STYLES*************************/
+#wp-calendar caption {
+  background: #393B48;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar td {
+letter-spacing: normal;
+padding: 2px 0;
+text-align: center;
+}
+#wp-calendar {
+empty-cells: show;
+font-size: 14px;
+margin: 0;
+width: 90%;
+}
+#wp-calendar a:hover {
+  background: #393B48;
+  color: #fff;
+}
+#wp-calendar td:hover, #wp-calendar #today {
+  background: #393B48;
+  color: #fff;
+}
+li.pagenav, li.categories, li.linkcat {
+  list-style:none;
+}
+h2.pagetitle {
+  margin: 3px 0 40px 0px;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+}
+p.center {
+  margin: 10px 0;
+}
+/* -------- END WP STYLES -------- */
+
+
+
+/* -------- TABLES -------- */
+#contentwrap table{font-size:1.2em;margin:5px 0 25px 1px;}
+#contentwrap table td{padding:8px;border: 1px solid #ccc;}
+/* -------- END TABLES -------- */
+
+
+/* -------- PAGE NAVIGATION -------- */
+
+.wp-pagenavi{
+  clear:both;
+  margin:20px 0 20px;
+  text-align:center;
+}
+.wp-pagenavi span.pages,.wp-pagenavi span.extend{
+  background:#a0434a;
+  border: 1px solid #000;
+  color:#fff;
+  border-radius: 3px;
+  margin:2px;
+  padding:3px 7px;
+}
+.wp-pagenavi a,.wp-pagenavi a:link,.wp-pagenavi a:visited{
+  background:#a0434a;
+  border: 1px solid #000;
+  color:#fff;
+  border-radius: 3px;  margin:2px;
+  padding:3px 7px;
+  text-decoration:none;}
+.wp-pagenavi span.current,.wp-pagenavi a:hover{
+  background:#a0434a;
+  border: 1px solid #000;
+  color:#000;
+  border-radius: 3px;
+  margin:2px;
+  padding:3px 7px;
+}
+/* -------- END PAGE NAVIGATION -------- */
+#twitter_update_list a, #twitter_update_list a:visited {
+  color: #d98e94 !important;
+}
+#twitter_update_list span {
+  float: left;
+}
+#twitter_update_list a {
+  clear: both;
+}
+.flickr_badge_image { float: left; margin-bottom: 12px; }
+.flickr_badge_image img { width: 52px; height: 45px; padding: 4px; margin: 5px 12px 0px 0; border: 1px solid #83333a;  float: left; }
+#flickr_badge_image3 img, #flickr_badge_image6 img, #flickr_badge_image9, #flickr_badge_image12 {
+  margin-right: 0;
+}

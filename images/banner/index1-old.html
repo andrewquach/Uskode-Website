@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	
+var current_banner = 1;
+var total_banners = 0;
+var wait = 0;
+
+function banner_init()
+{
+
+       
+        //set navigation
+        elements = document.getElementById('banners').getElementsByTagName('ul')[0].getElementsByTagName('li');
+        total_banners = elements.length;
+        for (var i = 0; i < elements.length; i++) 
+        { 
+               	elements[i].title = i + 1;
+                elements[i].onmouseover = function () 
+                {
+                		//banner(this.title);
+                        clearTimeout(wait);
+                }
+                elements[i].onmouseout = function () 
+                {
+
+                        clearTimeout(wait);
+
+                        wait = setTimeout('nextBanner()',bannertime);
+
+                }       
+        }
+        wait = setTimeout('nextBanner()',bannertime);
+} 
+
+
+function banner(nr)
+{
+        clearTimeout(wait);
+        elements = document.getElementById('banners').getElementsByTagName('div');
+        //hide all divs
+        for (var i = 0; i < elements.length; i++) 
+        { 
+                if (nr == (i + 1))
+                {
+                        //show selected banner  
+                        elements[i].style.display = "block";
+                } else
+                {       //hide everything else
+                        elements[i].style.display = "none";     
+                }
+        }
+        wait = setTimeout('nextBanner()',bannertime);
+}
+
+
+function nextBanner() 
+{
+
+		if(current_banner < total_banners) 
+        {
+                current_banner ++; 
+        }
+
+        else
+        {       current_banner = 1;
+        }
+
+        banner(current_banner);
+		//reset style của tất cả các thành phần về ban đầu
+		for (var i = 0; i < 6; i++) 
+		{
+			$("#"+i).css("background","");
+			$("#"+i).css("color","#494949");
+			//chuan bị style cho hover
+			$("#"+i).mouseenter(function() {
+				$(this).css("color","#FFFFFF");
+			  }).mouseleave(function() {
+			    $(this).css("color","#494949");
+			  });
+	
+		}
+		//set style cho đối tượng hiện tại
+		$("#"+current_banner).css("background","url('slider-menu-hover.jpg') repeat-x scroll transparent");
+		$("#"+current_banner).css("color","white");
+		//chuan bị style cho hover
+			$("#"+current_banner).mouseenter(function() {
+				$(this).css("color","#FFFFFF");
+			  }).mouseleave(function() {
+			    $(this).css("color","#FFFFFF");
+			  });
+}
+
+	
+//-->
+</SCRIPT>
+  <style>
+  body
+{
+        /*ie needs this*/
+        margin:0px;
+        padding-botom:10px;
+        /*set global font settings*/
+        font-size:12px;
+        font-family:Arial;
+		line-height:28px;
+}
+#banners
+{
+        width:960px;
+        height:378px;
+       
+}
+
+#banners div
+{
+        width:960px;
+        height:350px;
+        display:none;
+        margin:0px;
+
+}
+
+#banners #banner1
+{
+        display:block;
+}
+
+#banners div span
+{
+        width:90px;
+        position:relative;
+        display:block;
+        top:-150px;
+        line-height:1.5em;
+        left:10px;
+        background:#fff;
+        font-size:1.2em;
+        padding:5px;
+        opacity:0.7;//standard
+        filter:alpha(opacity=50);//internet explorer
+        -moz-opacity:.50;//older firefox versions
+        
+}
+
+#banners ul
+{
+        width:auto;
+        height:28px;
+        background:url("slider-menu.jpg") repeat-x scroll 0 0 transparent;
+        margin:0px;
+}
+
+#banners ul li
+{
+       display:inline;
+        width:192px;
+}
+
+#banners ul li a
+{
+        text-decoration:none;
+       padding:1px;
+        line-height:28px;
+        margin:0px;
+        color:#494949;
+        height:28px;
+        font-weight:bold;
+		width:192px;
+}
+
+
+#banners ul li a:hover
+{
+        background:url("slider-menu-hover.jpg") repeat-x scroll transparent;
+        color:white;
+		width:192px;
+}
+ul.tab{margin:0; padding:0}
+ul.tab li{width:192px; height:28px;line-height:28px; font-size: 12px;float:left; list-style:none; display:block; margin:0!important; padding-bottom:0!important; }
+ul.tab li a{display:block; padding:6px;margin:0!important;}
+ul.tab li a:hover{background:url("slider-menu-hover.jpg") repeat-x scroll transparent;color:white;display:block; padding:6px;margin:0!important;}
+</style>
+ </HEAD>
+
+ <BODY>
+    <div id="banners">
+                <div id="banner1">
+                        <img src="1.jpg" border="0px">
+
+                </div>  
+                <div id="banner2">
+                        <img src="2.jpg" border="0px">
+                       
+
+                </div>  
+                <div id="banner3">
+                        <img src="3.jpg" border="0px">
+                      
+                </div>  
+                <div id="banner4">
+                        <img src="4.jpg" border="0px">
+                     
+                </div> 
+                <div id="banner5">
+                        <img src="5.jpg" border="0px">
+                     
+                </div> 				
+                <ul class="tab">
+                        
+						<li><center><a id="1" href="/index.php?option=com_content&view=article&id=7&Itemid=2" target="_blank" style='background:url("slider-menu-hover.jpg") repeat-x scroll transparent;color:white'>E-COMMERCE</a></center></li>    
+						<li><center><a id="2" href="/index.php?option=com_content&view=article&id=36&Itemid=2" target="_blank">CRM</a></center></li>
+                        <li><center><a id="3" href="/index.php?option=com_content&view=article&id=37&Itemid=2" target="_blank">HRM</a></center></li>      
+						<li><center><a id="4" href="/index.php?option=com_content&view=article&id=51&Itemid=2" target="_blank">CLOUD COMPUTING</a></center></li>
+						<li><center><a id="5" href="/index.php?option=com_content&view=article&id=2&Itemid=2" target="_blank">MOBILE</a><center></li>
+                </ul>
+        </div>
+        <script>bannertime = 3000;banner_init();</script>
+
+
+ </BODY>
+</HTML>
